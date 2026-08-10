@@ -37,4 +37,4 @@ RUN npm run build
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
 # 9. Matikan mesin yang bentrok TEPAT saat server menyala
-CMD sh -c "a2dismod mpm_event mpm_worker || true && a2enmod mpm_prefork && apache2-foreground"
+CMD sh -c "php artisan storage:link --force && a2dismod mpm_event mpm_worker || true && a2enmod mpm_prefork && apache2-foreground"
