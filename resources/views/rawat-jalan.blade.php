@@ -1,0 +1,49 @@
+@extends('app')
+@section('title', 'Rawat Jalan')
+@section('content')
+<section class="page-title bg-1">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row">
+		<div class="col-md-12">
+			<div class="block text-center">
+			<span class="text-white">Layanan</span>
+			<h1 class="text-capitalize mb-5 text-lg">Rawat Jalan</h1>
+				<ul class="list-inline breadcumb-nav">
+					<li class="list-inline-item"><a href="{{ route('home') }}" class="text-white">Home</a></li>
+					<li class="list-inline-item"><span class="text-white">/</span></li>
+					<li class="list-inline-item"><a href="{{ route('rawat-jalan') }}" class="text-white-50">Rawat Jalan</a></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>
+
+<section class="section service-2">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-7 text-center">
+				<div class="section-title">
+					<div class="divider mx-auto my-4"></div>
+					<p>RSU Muhammadiyah Ponorogo memiliki 20 poliklinik spesialis yang ditenagai oleh ahli proesional dan menggunakan teknologi diagnostik canggih dan computerize.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			@foreach($rawat_jalan as $poli)
+			<div class="col-lg-4 col-md-6 ">
+				<div class="department-block mb-5">
+					<img src="{{ $poli->gambar_poliklinik }}" alt="" class="img-fluid w-100">
+					<div class="content">
+						<h4 class="mt-4 mb-2 title-color">{{$poli->nama_poliklinik}}</h4>
+						<p class="mb-4" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">{{ $poli->deskripsi }}</p>
+						<a href="{{ route('poli-detail', $poli->id) }}" class="read-more">Selebihnya  <i class="icofont-simple-right ml-2"></i></a>
+					</div>
+				</div>
+			</div>
+			@endforeach
+	</div>
+</section>
+@endsection
