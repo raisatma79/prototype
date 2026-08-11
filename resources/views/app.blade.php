@@ -72,7 +72,7 @@
                 </div>
                 
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav ml-auto flex-grow-1 pe-3">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-lg-3">
                         <li class="nav-item active">
                             <a class="nav-link" href="{{ route('home') }}">Home</a>
                         </li>
