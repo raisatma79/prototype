@@ -12,10 +12,6 @@
     <!-- Google Fonts Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Panggil file CSS eksternal AOS di sini satu kali saja -->
-    <link href="{{ asset('vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-
     <!-- Bootstrap min CSS -->
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}">
 
@@ -55,57 +51,69 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navigation" id="navbar">
 		<div class="container">
-		 	 <a class="logo d-flex align-items-center me-auto py-2" href="{{ route('home') }}">
+		 	<a class="logo d-flex align-items-center me-auto py-2" href="{{ route('home') }}">
                 <div class="logo-wrapper">
                     <img src="https://rsumponorogo.com/rs/logoRSUMP.svg" alt="RSUMP Logo" class="img-fluid" style="max-height: 50px; width: auto; object-fit: contain;">
                 </div>
             </a>
 
-		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="icofont-navigation-menu"></span>
-		</button>
+            <!-- Tombol Toggler Diperbarui untuk Menargetkan Offcanvas -->
+            <button class="navbar-toggler collapsed border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icofont-navigation-menu fs-3"></span>
+            </button>
 	  
-		  <div class="collapse navbar-collapse" id="navbarmain">
-			<ul class="navbar-nav ml-auto">
-			  	<li class="nav-item active">
-					<a class="nav-link" href="{{ route('home') }}">Home</a>
-			  	</li>
-			   	<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="{{ route('about') }}" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tentang Kami <i class="icofont-thin-down"></i></a>
-					<ul class="dropdown-menu" aria-labelledby="dropdown03">
-						<li><a class="dropdown-item" href="{{ route('about') }}">Profil RSUMP</a></li>
-						<li><a class="dropdown-item" href="{{ route('indikator-mutu') }}">Indikator Mutu</a></li>
-					</ul>
-			  	</li>
+            <!-- Komponen Offcanvas Sidebar -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="https://rsumponorogo.com/rs/logoRSUMP.svg" alt="RSUMP Logo" class="img-fluid" style="max-height: 40px;">
+                    </h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ml-auto flex-grow-1 pe-3">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ route('home') }}">Home</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="{{ route('about') }}" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tentang Kami <i class="icofont-thin-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                                <li><a class="dropdown-item" href="{{ route('about') }}">Profil RSUMP</a></li>
+                                <li><a class="dropdown-item" href="{{ route('indikator-mutu') }}">Indikator Mutu</a></li>
+                            </ul>
+                        </li>
 
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="{{ route('service') }}" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Layanan <i class="icofont-thin-down"></i></a>
-					<ul class="dropdown-menu" aria-labelledby="dropdown03">
-						<li><a class="dropdown-item" href="{{ route('rawat-jalan') }}">Rawat Jalan</a></li>
-						<li><a class="dropdown-item" href="{{ route('rawat-inap') }}">Rawat Inap</a></li>
-						<li><a class="dropdown-item" href="{{ route('service') }}">Fasilitas & Penunjang Medis</a></li>
-					</ul>
-			  	</li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="{{ route('service') }}" id="dropdown03" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Layanan <i class="icofont-thin-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                <li><a class="dropdown-item" href="{{ route('rawat-jalan') }}">Rawat Jalan</a></li>
+                                <li><a class="dropdown-item" href="{{ route('rawat-inap') }}">Rawat Inap</a></li>
+                                <li><a class="dropdown-item" href="{{ route('service') }}">Fasilitas & Penunjang Medis</a></li>
+                            </ul>
+                        </li>
 
-			  	<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="{{ route('dokter') }}" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dokter <i class="icofont-thin-down"></i></a>
-					<ul class="dropdown-menu" aria-labelledby="dropdown03">
-						<li><a class="dropdown-item" href="{{ route('dokter') }}">Dokter</a></li>
-						<li><a class="dropdown-item" href="{{ route('schedule') }}">Jadwal Dokter</a></li>
-						<li><a class="dropdown-item" href="{{ route('consultation') }}">Konsultasi Onlne</a></li>
-					</ul>
-			  	</li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="{{ route('dokter') }}" id="dropdown04" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dokter <i class="icofont-thin-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                                <li><a class="dropdown-item" href="{{ route('dokter') }}">Dokter</a></li>
+                                <li><a class="dropdown-item" href="{{ route('schedule') }}">Jadwal Dokter</a></li>
+                                <li><a class="dropdown-item" href="{{ route('consultation') }}">Konsultasi Onlne</a></li>
+                            </ul>
+                        </li>
 
-			   <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="{{ route('news') }}" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Informasi <i class="icofont-thin-down"></i></a>
-					<ul class="dropdown-menu" aria-labelledby="dropdown05">
-						<li><a class="dropdown-item" href="{{ route('news') }}">Berita Terkini</a></li>
-						<li><a class="dropdown-item" href="{{ route('information') }}">Alur Pendaftaran Pasien</a></li>
-                        <li><a class="dropdown-item" href="{{ route('information-faq') }}">FAQ</a></li>
-					</ul>
-			  	</li>
-			</ul>
-		  </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="{{ route('news') }}" id="dropdown05" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Informasi <i class="icofont-thin-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                                <li><a class="dropdown-item" href="{{ route('news') }}">Berita Terkini</a></li>
+                                <li><a class="dropdown-item" href="{{ route('information') }}">Alur Pendaftaran Pasien</a></li>
+                                <li><a class="dropdown-item" href="{{ route('information-faq') }}">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 		</div>
 	</nav>
 </header>
@@ -238,9 +246,6 @@
 
 <!-- SweetAlert2 CDN -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-<!-- Panggil JS eksternal AOS di paling bawah -->
-<script src="{{ asset('vendor/aos/aos.js') }}"></script>
     
 <script>
 	// 1. Pop-Up ketika Data Berhasil Terkirim

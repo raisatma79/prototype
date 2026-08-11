@@ -442,6 +442,12 @@ a:focus {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+    .header-top-bar {
+        display: none !important;
+    }
+}
+
 .top-bar-info li a {
   color: #fff;
   margin-right: 20px;
@@ -1886,6 +1892,12 @@ a:focus {
   }
 }
 
+@media (max-width: 768px) {
+    .tentang-kami-section {
+        padding: 50px 20px !important; /* Mengurangi ruang kosong di atas/bawah pada mobile */
+    }
+}
+
 /* Mengatur tinggi hero section (Bisa disesuaikan, misalnya 100vh untuk full screen) */
 #heroCarousel .carousel-item {
     height: 90vh; 
@@ -1919,6 +1931,34 @@ a:focus {
    Kita perlambat menjadi 1.5 detik */
 .carousel-fade .carousel-item {
     transition: opacity 1.5s ease-in-out !important;
+}
+
+@media (max-width: 768px) {
+    /* Mengurangi tinggi slider di layar kecil */
+    #heroCarousel .carousel-item {
+        height: 60vh !important; 
+        min-height: 400px !important;
+    }
+    
+    /* Mengubah posisi teks menjadi di kiri bawah (seperti gambar referensi) */
+    #heroCarousel .carousel-caption {
+        align-items: flex-start !important;
+        justify-content: flex-end !important;
+        text-align: left;
+        padding-bottom: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    
+    /* Mengecilkan ukuran font agar tidak terlalu penuh */
+    #heroCarousel .carousel-caption h1.display-4 {
+        font-size: 2rem !important;
+        line-height: 1.2;
+    }
+    
+    #heroCarousel .carousel-caption p.lead {
+        font-size: 1rem !important;
+    }
 }
 
 /*# sourceMappingURL=maps/style.css.map */
