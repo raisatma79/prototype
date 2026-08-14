@@ -111,7 +111,7 @@
 			<div class="col-lg-4">
 				<div class="about-content pl-4 mt-4 mt-lg-0">
 					<h2 class="title-color">Daftar Tanpa Antri</h2>
-					<p class="mt-4 mb-5">Daftar di RSUMP cukup dari gadget anda memlalui aplikasi RSU Muhammadiyah Ponorogo.</p>
+					<p class="mt-4 mb-5">Daftar di RSUMP cukup dari gadget anda melalui aplikasi RSU Muhammadiyah Ponorogo.</p>
 					<a href="https://play.google.com/store/apps/details?id=com.rsumponorogo.portal&pcampaignid=web_share" class="btn btn-main-2 btn-round-full btn-icon">Unduh Aplikasi Sekarang<i class="icofont-simple-right ml-3"></i></a>
 				</div>
 			</div>
