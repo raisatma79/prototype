@@ -41,14 +41,14 @@
 	<div class="container position-relative" style="z-index: 2;">
 		<div class="cta position-relative">
 			<div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="col-6 col-lg-3 col-md-6 col-sm-6">
 					<div class="counter-stat">
 						<i class="icofont-person"></i>
 						<span class="h3">600.000</span>+
 						<p>Pasien</p>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="col-6 col-lg-3 col-md-6 col-sm-6">
 					<div class="counter-stat">
 						<i class="icofont-flag"></i>
 						<span class="h3">27</span>+
@@ -56,14 +56,14 @@
 					</div>
 				</div>
 				
-				<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="col-6 col-lg-3 col-md-6 col-sm-6">
 					<div class="counter-stat">
 						<i class="icofont-doctor"></i>
 						<span class="h3">40</span>+
 						<p>Dokter Profesional</p>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="col-6 col-lg-3 col-md-6 col-sm-6">
 					<div class="counter-stat">
 						<i class="icofont-bed"></i>
 						<span class="h3">160</span>
@@ -421,49 +421,49 @@
 
 	<div class="container">
 		<div class="row clients-logo">
-			<div class="col-lg-2">
+			<div class="col-6 col-md-4 col-lg-2 mb-3">
 				<div class="client-thumb">
-					<img src="https://logos-download.com/wp-content/uploads/2021/01/BPJS_Kesehatan_Logo.png" alt="" class="img-fluid" style="height: 100px; object-fit: cover;">
+					<img src="https://logos-download.com/wp-content/uploads/2021/01/BPJS_Kesehatan_Logo.png" alt="" class="img-fluid" style="height: 100px; object-fit: contain;">
 				</div>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-6 col-md-4 col-lg-2 mb-3">
 				<div class="client-thumb">
-					<img src="https://vignette.wikia.nocookie.net/logopedia/images/b/ba/Jasa_Raharja.png/revision/latest?cb=20190924121510" alt="" class="img-fluid" style="height: 100px; object-fit: cover;">
+					<img src="https://vignette.wikia.nocookie.net/logopedia/images/b/ba/Jasa_Raharja.png/revision/latest?cb=20190924121510" alt="" class="img-fluid" style="height: 100px; object-fit: contain;">
 				</div>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-6 col-md-4 col-lg-2 mb-3">
 				<div class="client-thumb">
-					<img src="https://hrplawcons.com/wp-content/uploads/2024/04/asuransi-mag.png" alt="" class="img-fluid" style="height: 100px; object-fit: cover;">
+					<img src="https://hrplawcons.com/wp-content/uploads/2024/04/asuransi-mag.png" alt="" class="img-fluid" style="height: 100px; object-fit: contain;">
 				</div>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-6 col-md-4 col-lg-2 mb-3">
 				<div class="client-thumb">
-					<img src="https://1.bp.blogspot.com/-bOgTIIT3oT0/X_Kx8PXnqxI/AAAAAAAABgM/r-Z-JW2OHvgcy9KKNxOMvo9eNNTa68wlgCLcBGAsYHQ/s2048/Logo%2BBPJS%2BKetenagakerjaan.png" alt="" class="img-fluid" style="height: 100px; object-fit: cover;">
+					<img src="https://1.bp.blogspot.com/-bOgTIIT3oT0/X_Kx8PXnqxI/AAAAAAAABgM/r-Z-JW2OHvgcy9KKNxOMvo9eNNTa68wlgCLcBGAsYHQ/s2048/Logo%2BBPJS%2BKetenagakerjaan.png" alt="" class="img-fluid" style="height: 100px; object-fit: contain;">
 				</div>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-6 col-md-4 col-lg-2 mb-3">
 				<div class="client-thumb">
-					<img src="https://www.ir-bri.com/bbri_assets/images/subsidiaries/BRI-Life.png" alt="" class="img-fluid" style="height: 100px; object-fit: cover;">
+					<img src="https://www.ir-bri.com/bbri_assets/images/subsidiaries/BRI-Life.png" alt="" class="img-fluid" style="height: 100px; object-fit: contain;">
 				</div>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-6 col-md-4 col-lg-2 mb-3">
 				<div class="client-thumb">
-					<img src="https://iconlogovector.com/uploads/images/2024/09/lg-66ecf9189178d-BCA-Life.webp" alt="" class="img-fluid" style="height: 100px; object-fit: cover;">
+					<img src="https://iconlogovector.com/uploads/images/2024/09/lg-66ecf9189178d-BCA-Life.webp" alt="" class="img-fluid" style="height: 100px; object-fit: contain;">
 				</div>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-6 col-md-4 col-lg-2 mb-3">
 				<div class="client-thumb">
-					<img src="https://rshva.com/assets/upload/image/mitra/aa.png" alt="" class="img-fluid" style="height: 100px; object-fit: cover;">
+					<img src="https://rshva.com/assets/upload/image/mitra/aa.png" alt="" class="img-fluid" style="height: 100px; object-fit: contain;">
 				</div>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-6 col-md-4 col-lg-2 mb-3">
 				<div class="client-thumb">
-					<img src="https://tse1.mm.bing.net/th/id/OIP.inqhkUAMte1AynG5-aJiEwHaDv?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="" class="img-fluid" style="height: 100px; object-fit: cover;">
+					<img src="https://tse1.mm.bing.net/th/id/OIP.inqhkUAMte1AynG5-aJiEwHaDv?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="" class="img-fluid" style="height: 100px; object-fit: contain;">
 				</div>
 			</div>
-			<div class="col-lg-2">
+			<div class="col-6 col-md-4 col-lg-2 mb-3">
 				<div class="client-thumb">
-					<img src="https://menara165.com/wp-content/uploads/2021/02/logo-fullerton-health.png" alt="" class="img-fluid" style="height: 100px; object-fit: cover;">
+					<img src="https://menara165.com/wp-content/uploads/2021/02/logo-fullerton-health.png" alt="" class="img-fluid" style="height: 100px; object-fit: contain;">
 				</div>
 			</div>
 		</div>
