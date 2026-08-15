@@ -135,21 +135,38 @@
                             Berbagai layanan medis unggulan untuk mendukung diagnosis, perawatan, dan pemulihan pasien secara optimal.
                         </p>
                     </div>
-					<div class="col-lg-8 col-md-7">
+
+					<div class="col-lg-8 col-md-7 d-none d-md-block">
 						<div class="service-slider-container">
 							<div class="service-slider">
-								@foreach($list_fasilitas as $fasilitas)
-									<div>
-										<div class="d-flex d-md-none align-items-center justify-content-center gap-2 mt-4">
-											<a href="{{ route('service', $fasilitas->id) }}">
-											<img src="{{ $fasilitas->gambar }}" alt="{{ $fasilitas->nama_fasilitas }}" class="service-card-img">
-											<div class="service-card-overlay">
-												<h4 class="fw-bold text-white mb-2">{{ $fasilitas->nama_fasilitas }}</h4>
-												<p class="small mb-0 text-white-50" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">{{ $fasilitas->deskripsi }}</p>
-											</div>
-											</a>
+
+
+								@foreach($list_poliklinik as $poliklinik)
+								<div>
+									<div class="service-card-item">
+										<a href="{{ route('poli-detail', $poliklinik->id) }}">
+										<img src="{{ $poliklinik->gambar_poliklinik }}" alt="{{ $poliklinik->nama_poliklinik }}" class="service-card-img">
+										<div class="service-card-overlay">
+											<h4 class="fw-bold text-white mb-2">{{ $poliklinik->nama_poliklinik }}</h4>
+											<p class="small mb-0 text-white-50" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">{{ $poliklinik->deskripsi }}</p>
 										</div>
+										</a>
 									</div>
+								</div>
+								@endforeach
+
+								@foreach($list_fasilitas as $fasilitas)
+								<div>
+									<div class="service-card-item">
+										<a href="{{ route('service', $fasilitas->id) }}">
+										<img src="{{ $fasilitas->gambar }}" alt="{{ $fasilitas->nama_fasilitas }}" class="service-card-img">
+										<div class="service-card-overlay">
+											<h4 class="fw-bold text-white mb-2">{{ $fasilitas->nama_fasilitas }}</h4>
+											<p class="small mb-0 text-white-50" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">{{ $fasilitas->deskripsi }}</p>
+										</div>
+										</a>
+									</div>
+								</div>
 								@endforeach
 							</div>
 						</div>
