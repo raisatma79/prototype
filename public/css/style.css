@@ -713,9 +713,8 @@ a:focus {
 }
 
 .counter-stat {
-  text-align: center;
-  padding: 55px 0px 40px 0px;
-  position: relative;
+  padding: 10px;
+  word-wrap: break-word;
 }
 
 .counter-stat i {
@@ -738,6 +737,19 @@ a:focus {
 .counter-stat p {
   margin-bottom: 0px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* Ukuran font responsif khusus untuk Mobile */
+@media (max-width: 767px) {
+    .stat-number {
+        font-size: 2rem !important; /* Mengecilkan angka di layar HP */
+    }
+    .stat-text {
+        font-size: 0.9rem !important; /* Mengecilkan label teks di layar HP */
+    }
+    .counter-stat {
+        margin-bottom: 15px;
+    }
 }
 
 .mb--80 {
@@ -1972,36 +1984,6 @@ a:focus {
     
     #heroCarousel .carousel-caption p.lead {
         font-size: 1rem !important;
-    }
-}
-
-/* Penyesuaian agar teks tidak keluar batas (overflow) */
-.counter-stat {
-    padding: 10px;
-    word-wrap: break-word; /* Mencegah teks panjang menabrak elemen lain */
-}
-
-/* Ukuran font default untuk desktop */
-.stat-number {
-    font-size: 3.5rem; 
-    font-weight: bold;
-    color: #ffffff; /* Sesuaikan warna */
-}
-.stat-text {
-    font-size: 1.1rem;
-    color: #ffffff;
-}
-
-/* Ukuran font responsif khusus untuk Mobile */
-@media (max-width: 767px) {
-    .stat-number {
-        font-size: 2rem !important; /* Mengecilkan angka di layar HP */
-    }
-    .stat-text {
-        font-size: 0.9rem !important; /* Mengecilkan label teks di layar HP */
-    }
-    .counter-stat {
-        margin-bottom: 15px;
     }
 }
 
