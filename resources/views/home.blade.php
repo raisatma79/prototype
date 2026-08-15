@@ -275,7 +275,7 @@
                 </div>
 
                 <!-- Grid 4 Berita -->
-                <div class="row g-3 d-none d-md-block">
+                <div class="row g-3">
 					@foreach($list_berita as $berita)
                     <!-- Berita 1 -->
                     <div class="col-md-6 col-sm-6 mb-3">
