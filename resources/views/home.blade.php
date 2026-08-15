@@ -124,7 +124,7 @@
 <!-- Section Layanan Unggulan Modern -->
 <section class="service-featured-section">
     <div class="container">
-        <div class="row g-4 align-items-stretch">
+        <div class="row gx-4 gy-2 gy-md-4 align-items-stretch">
             
             <!-- Side Panel Kiri -->
             <div class="col-lg-4 col-md-5 mb-4 mb-md-0">
