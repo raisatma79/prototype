@@ -172,7 +172,7 @@
 					</div>
 
                     <!-- Tombol Navigasi Slider -->
-                    <div class="d-flex align-items-center gap-2 mt-4 d-none d-md-block">
+                    <div class="d-none d-md-block d-flex align-items-center gap-2 mt-4">
                         <button class="service-nav-btn service-prev me-2" type="button" aria-label="Previous">
                             <i class="icofont-simple-left"></i>
                         </button>
@@ -229,7 +229,43 @@
             
             <!-- Kolom Kiri: Berita Terkini (4 Berita) -->
             <div class="col-lg-8">
-                <div class="mb-4">
+				<!-- Widget Berita Mobile -->
+				<div class="col-lg-4 d-md-none">
+					<div class="card border-0 shadow-sm rounded-4 p-4 bg-white mb-4">
+						<h5 class="fw-bold text-dark border-bottom pb-3 mb-3">Berita Terbaru</h5>
+						<div class="d-flex flex-column gap-3">
+							@if(isset($recentNews) && $recentNews->count() > 0)
+								@foreach($recentNews as $recent)
+									<a href="{{ route('news-detail', $recent->slug) }}" class="text-decoration-none d-flex gap-3 align-items-start py-1">
+										<!-- Kotak Gambar Thumbnail Samping Kiri -->
+										<div class="rounded-3 overflow-hidden bg-light border flex-shrink-0" style="width: 80px; height: 60px;">
+											@if(!empty($recent->gambar))
+												<img src="{{ $recent->gambar }}" alt="{{ $recent->judul }}" class="w-100 h-100" style="object-fit: cover;">
+											@else
+												<div class="w-100 h-100 d-flex align-items-center justify-content-center text-muted" style="font-size: 10px;">
+													No Image
+												</div>
+											@endif
+										</div>
+										<!-- Teks Judul & Tanggal Kanan -->
+										<div class="flex-grow-1">
+											<h6 class="fw-bold text-dark mb-1 leading-snug" style="font-size: 13px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+												{{ $recent->judul }}
+											</h6>
+											<span class="text-muted d-block" style="font-size: 11px;">
+												{{ $recent->date }}
+											</span>
+										</div>
+									</a>
+								@endforeach
+							@else
+								<p class="text-muted small mb-0">Tidak ada berita terbaru lainnya.</p>
+							@endif
+						</div>
+					</div>
+				</div>
+
+                <div class="mb-4 d-none d-md-block">
                     <h2 class="fw-bold mb-3" style="color: #1a2b4c; font-size: 2.2rem;">Berita Terkini</h2>
                     <p class="text-muted" style="max-width: 720px; line-height: 1.6;">
                         Terimakasih telah memilih kami untuk melayani kebutuhan kesehatan anda. Informasi yang kami sajikan semoga dapat membantu anda untuk mengenal lebih jauh tentang kinerja kami dalam bidang pelayanan kesehatan.
@@ -237,7 +273,7 @@
                 </div>
 
                 <!-- Grid 4 Berita -->
-                <div class="row g-3">
+                <div class="row g-3 d-none d-md-block">
 					@foreach($list_berita as $berita)
                     <!-- Berita 1 -->
                     <div class="col-md-6 col-sm-6 mb-3">
