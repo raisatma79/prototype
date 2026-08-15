@@ -255,16 +255,19 @@
 									</div>
 								</a>
 							@endforeach
-						@else
-							<p class="text-muted small mb-0">Tidak ada berita terbaru lainnya.</p>
-						@endif
+						</div>
+						<!-- Tombol Lihat Semua Berita -->
+						<div class="mt-4 d-md-none">
+							<a href="{{ route('news') }}" class="btn text-white px-4 py-2-5 rounded-2 d-inline-flex align-items-center gap-2 shadow-sm" style="background-color: #2b3990; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.5px;">
+								LIHAT SEMUA BERITA <i class="icofont-simple-right fs-6"></i>
+							</a>
 						</div>
 					</div>
 				</div>
 
 			<!-- Kolom Kiri: Berita Terkini (4 Berita) -->
-            <div class="col-lg-8">
-                <div class="mb-4 d-none d-md-block">
+            <div class="col-lg-8 d-none d-md-block">
+                <div class="mb-4">
                     <h2 class="fw-bold mb-3" style="color: #1a2b4c; font-size: 2.2rem;">Berita Terkini</h2>
                     <p class="text-muted" style="max-width: 720px; line-height: 1.6;">
                         Terimakasih telah memilih kami untuk melayani kebutuhan kesehatan anda. Informasi yang kami sajikan semoga dapat membantu anda untuk mengenal lebih jauh tentang kinerja kami dalam bidang pelayanan kesehatan.
