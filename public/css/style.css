@@ -713,32 +713,31 @@ a:focus {
 }
 
 .counter-stat {
-    padding: 10px;
-    word-wrap: break-word; /* Mencegah teks panjang menabrak elemen lain */
+  text-align: center;
+  padding: 55px 0px 40px 0px;
+  position: relative;
 }
 
-/* Ukuran font default untuk desktop */
-.stat-number {
-    font-size: 3.5rem; 
-    font-weight: bold;
-    color: #fff; /* Sesuaikan warna */
-}
-.stat-text {
-    font-size: 1.1rem;
-    color: #fff;
+.counter-stat i {
+  display: block;
+  color: rgba(255, 255, 255, 0.06);
+  font-size: 70px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  -webkit-transform: translateY(25px);
+  transform: translateY(25px);
 }
 
-/* Ukuran font responsif khusus untuk Mobile */
-@media (max-width: 500px) {
-    .stat-number {
-        font-size: 2rem !important; /* Mengecilkan angka di layar HP */
-    }
-    .stat-text {
-        font-size: 0.9rem !important; /* Mengecilkan label teks di layar HP */
-    }
-    .counter-stat {
-        margin-bottom: 10px;
-    }
+.counter-stat span {
+  font-size: 70px;
+  color: #fff;
+}
+
+.counter-stat p {
+  margin-bottom: 0px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .mb--80 {
