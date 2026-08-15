@@ -136,7 +136,7 @@
                         </p>
                     </div>
 
-					<div class="col-lg-8 col-md-7">
+					<div class="col-lg-8 col-md-7 d-md-none">
 						<div class="service-slider-container">
 							<div class="service-slider">
 
@@ -169,18 +169,10 @@
 								@endforeach
 							</div>
 						</div>
-						<!-- Tombol Navigasi Slider (Hanya tampil di Mobile, diletakkan di bawah slider) -->
-						<div class="d-flex d-md-none align-items-center justify-content-center gap-2 mt-4">
-							<button class="service-nav-btn service-prev me-2" type="button" aria-label="Previous">
-								<i class="icofont-simple-left"></i>
-							</button>
-							<button class="service-nav-btn service-next" type="button" aria-label="Next">
-								<i class="icofont-simple-right"></i>
-							</button>
-						</div>
+					</div>
 
                     <!-- Tombol Navigasi Slider -->
-                    <div class="d-flex align-items-center gap-2 mt-4">
+                    <div class="d-flex align-items-center gap-2 mt-4 d-none d-md-block">
                         <button class="service-nav-btn service-prev me-2" type="button" aria-label="Previous">
                             <i class="icofont-simple-left"></i>
                         </button>
