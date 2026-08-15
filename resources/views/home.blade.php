@@ -131,13 +131,13 @@
                 <div class="service-left-box">
                     <div>
                         <h2 class="fw-bold text-dark mb-3" style="font-size: 2rem; line-height: 1.3;">Layanan Unggulan Kami</h2>
-                        <p class="text-muted fs-6" style="line-height: 1.6;">
+                        <p class="text-muted fs-6 d-none d-md-block" style="line-height: 1.6;">
                             Berbagai layanan medis unggulan untuk mendukung diagnosis, perawatan, dan pemulihan pasien secara optimal.
                         </p>
                     </div>
 
                     <!-- Tombol Navigasi Slider -->
-                    <div class="d-flex align-items-center gap-2 mt-4">
+                    <div class="d-none d-md-flex align-items-center gap-2 mt-4">
                         <button class="service-nav-btn service-prev me-2" type="button" aria-label="Previous">
                             <i class="icofont-simple-left"></i>
                         </button>
@@ -182,6 +182,15 @@
                         </div>
 						@endforeach
                     </div>
+                </div>
+				<!-- Tombol Navigasi Slider (Hanya tampil di Mobile, diletakkan di bawah slider) -->
+                <div class="d-flex d-md-none align-items-center justify-content-center gap-2 mt-4">
+                    <button class="service-nav-btn service-prev me-2" type="button" aria-label="Previous">
+                        <i class="icofont-simple-left"></i>
+                    </button>
+                    <button class="service-nav-btn service-next" type="button" aria-label="Next">
+                        <i class="icofont-simple-right"></i>
+                    </button>
                 </div>
             </div>
         </div>

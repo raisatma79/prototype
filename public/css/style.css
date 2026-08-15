@@ -784,6 +784,15 @@ a:focus {
   border: 5px solid #fff;
 }
 
+/* Penyesuaian tinggi service-left-box untuk mobile */
+@media (max-width: 767px) {
+    .service-left-box {
+        min-height: auto !important;
+        padding: 24px 20px !important; /* Membuat padding sedikit lebih rapat */
+        margin-bottom: -15px; /* Opsional: mengurangi jarak dengan slider di bawahnya */
+    }
+}
+
 .department-service {
   margin-bottom: 40px;
 }
