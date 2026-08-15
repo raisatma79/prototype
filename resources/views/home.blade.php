@@ -40,34 +40,32 @@
 <section class="cta-section cta position-relative">
 	<div class="container position-relative" style="z-index: 2;">
 		<div class="cta position-relative">
-			<div class="row">
-				<div class="col-6 col-lg-3 col-md-6 col-sm-6">
+			<div class="row text-center">
+				<div class="col-6 col-md-3 mb-4">
 					<div class="counter-stat">
-						<i class="icofont-person"></i>
-						<span class="h3">600.000</span>+
-						<p>Pasien</p>
-					</div>
-				</div>
-				<div class="col-6 col-lg-3 col-md-6 col-sm-6">
-					<div class="counter-stat">
-						<i class="icofont-flag"></i>
-						<span class="h3">27</span>+
-						<p>Poliklinik</p>
+						<h2 class="stat-number">100.000+</h2>
+						<p class="stat-text">Pasien</p>
 					</div>
 				</div>
 				
-				<div class="col-6 col-lg-3 col-md-6 col-sm-6">
+				<div class="col-6 col-md-3 mb-4">
 					<div class="counter-stat">
-						<i class="icofont-doctor"></i>
-						<span class="h3">40</span>+
-						<p>Dokter Profesional</p>
+						<h2 class="stat-number">27+</h2>
+						<p class="stat-text">Poliklinik</p>
 					</div>
 				</div>
-				<div class="col-6 col-lg-3 col-md-6 col-sm-6">
+
+				<div class="col-6 col-md-3 mb-4">
 					<div class="counter-stat">
-						<i class="icofont-bed"></i>
-						<span class="h3">160</span>
-						<p>Kamar Inap</p>
+						<h2 class="stat-number">40+</h2>
+						<p class="stat-text">Dokter Profesional</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3 mb-4">
+					<div class="counter-stat">
+						<h2 class="stat-number">160+</h2>
+						<p class="stat-text">Kamar Inap</p>
 					</div>
 				</div>
 			</div>
