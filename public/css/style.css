@@ -784,27 +784,6 @@ a:focus {
   border: 5px solid #fff;
 }
 
-/* Penyesuaian khusus tampilan mobile */
-@media (max-width: 767px) {
-    /* 1. Reset ukuran kotak background hijau */
-    .service-left-box {
-        min-height: auto !important;
-        height: auto !important;
-        padding: 20px 20px 15px 20px !important; /* Mengurangi padding bawah agar pas dengan teks */
-        margin-bottom: 0 !important;
-    }
-
-    /* 2. Menghilangkan margin pada judul H2 agar tidak ada sisa space */
-    .service-left-box h2 {
-        margin-bottom: 0 !important;
-    }
-
-    /* 3. Menimpa margin-bottom (mb-4) dari class Bootstrap pada kolom parent */
-    .service-featured-section .row > div:first-child {
-        margin-bottom: 15px !important; /* Ubah angka 15px ini jika ingin jarak yang lebih rapat/lebar dengan slider */
-    }
-}
-
 .department-service {
   margin-bottom: 40px;
 }
