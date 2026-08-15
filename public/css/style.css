@@ -713,8 +713,9 @@ a:focus {
 }
 
 .counter-stat {
-  padding: 10px;
-  word-wrap: break-word;
+  text-align: center;
+  padding: 55px 0px 40px 0px;
+  position: relative;
 }
 
 .counter-stat i {
