@@ -131,7 +131,7 @@
                 <div class="service-left-box">
                     <div>
                         <h2 class="fw-bold text-dark mb-3" style="font-size: 2rem; line-height: 1.3;">Layanan Unggulan Kami</h2>
-                        <p class="text-muted fs-6 d-none d-md-block" style="line-height: 1.6;">
+                        <p class="text-muted fs-6" style="line-height: 1.6;">
                             Berbagai layanan medis unggulan untuk mendukung diagnosis, perawatan, dan pemulihan pasien secara optimal.
                         </p>
                     </div>
