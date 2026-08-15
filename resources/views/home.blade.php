@@ -97,7 +97,7 @@
 <section class="section about">
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="col-lg-4 col-sm-6">
+			<div class="col-lg-4 col-sm-6 d-none d-md-block">
 				<div class="about-img">
 					<img src="images/about/Screenshot (74).png" alt="" class="img-fluid">
 					<img src="images/about/Screenshot (54).png" alt="" class="img-fluid mt-4">
