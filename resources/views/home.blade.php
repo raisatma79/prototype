@@ -172,7 +172,7 @@
 					</div>
 
                     <!-- Tombol Navigasi Slider -->
-                    <div class="d-none d-md-block d-flex align-items-center gap-2 mt-4">
+                    <div class="d-flex align-items-center gap-2 mt-4 d-none d-md-block">
                         <button class="service-nav-btn service-prev me-2" type="button" aria-label="Previous">
                             <i class="icofont-simple-left"></i>
                         </button>
@@ -327,7 +327,7 @@
         </div>
     </div>
 </section>
-<section class="section appoinment">
+<section class="section appoinment d-none d-md-block">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-lg-6 ">
