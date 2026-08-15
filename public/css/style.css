@@ -740,6 +740,19 @@ a:focus {
   color: rgba(255, 255, 255, 0.7);
 }
 
+/* Ukuran font responsif khusus untuk Mobile */
+@media (max-width: 500px) {
+    .stat-number {
+        font-size: 2rem !important; /* Mengecilkan angka di layar HP */
+    }
+    .stat-text {
+        font-size: 0.9rem !important; /* Mengecilkan label teks di layar HP */
+    }
+    .counter-stat {
+        margin-bottom: 10px;
+    }
+}
+
 .mb--80 {
   margin-bottom: -80px;
 }
