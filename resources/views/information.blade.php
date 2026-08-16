@@ -5,17 +5,17 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-        <div class="col-md-12">
-            <div class="block text-center">
-            <span class="text-white">Informasi</span>
-            <h1 class="text-capitalize mb-5 text-lg">Alur Pendaftaran Pasien</h1>
-            <ul class="list-inline breadcumb-nav">
-                <li class="list-inline-item"><a href="{{ route('home') }}" class="text-white">Home</a></li>
-                <li class="list-inline-item"><span class="text-white">/</span></li>
-                <li class="list-inline-item"><a href="{{ route('information') }}" class="text-white-50">Alur Pendaftaran Pasien</a></li>
-            </ul>
+            <div class="col-md-12">
+                <div class="block text-center">
+                    <span class="text-white">Informasi</span>
+                    <h1 class="text-capitalize mb-5 text-lg">Alur Pendaftaran Pasien</h1>
+                    <ul class="list-inline breadcumb-nav">
+                        <li class="list-inline-item"><a href="{{ route('home') }}" class="text-white">Home</a></li>
+                        <li class="list-inline-item"><span class="text-white">/</span></li>
+                        <li class="list-inline-item"><a href="{{ route('information') }}" class="text-white-50">Alur Pendaftaran Pasien</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
         </div>
     </div>
 </section>
@@ -25,7 +25,7 @@
     <div class="container">
         <div class="row g-4">
             <!-- Sidebar Navigation Left -->
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3 d-none d-md-block">
                 <div class="sticky-top" style="top: 100px;">
                     <nav class="nav flex-column fw-semibold fs-5 space-y-2">
                         <a href="#igd" class="nav-link text-secondary px-0 hover-primary">Alur Pelayanan IGD</a>
