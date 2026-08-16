@@ -37,13 +37,13 @@
                         @endforeach
                     </div>
                     <!-- Tampilan mobile -->
-                    <div class="btn-group d-md-none" id="v-pills-tab" role="group" aria-label="Button group with nested dropdown">
+                    <div class="btn-group d-md-none" id="v-pills-tab" role="tablist" aria-label="Button group with nested dropdown">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expended="false">
                             Pilih Tahun
                         </button>
                         <ul class="dropdown-menu">
                             @foreach($tabel_indikator_mutu as $tahun => $items)
-                                <li><a class="dropdon-item {{ $loop->first ? 'active' : '' }}" id="v-pills-{{ $tahun }}-tab" data-bs-target="#v-pills-{{ $tahun }}" aria-controls="v-pills-{{ $tahun }}" aria-selected="{{ $loop->first ? 'true' : 'false' }}" href="">Tahun {{ $tahun }}</a></li>
+                                <li><a class="dropdon-item {{ $loop->first ? 'active' : '' }}" id="v-pills-{{ $tahun }}-tab" data-bs-toggle="pill" data-bs-target="#v-pills-{{ $tahun }}" role="tab" aria-controls="v-pills-{{ $tahun }}" aria-selected="{{ $loop->first ? 'true' : 'false' }}" href="">Tahun {{ $tahun }}</a></li>
                             @endforeach
                         </ul>
                     </div>
