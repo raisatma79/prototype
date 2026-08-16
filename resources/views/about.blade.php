@@ -25,7 +25,7 @@
     <div class="container">
         <div class="row g-4">
             <!-- Sidebar Navigation Left -->
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3 d-none d-md-block">
                 <div class="sticky-top" style="top: 100px;">
                     <nav class="nav flex-column fw-semibold fs-5 space-y-2">
                         <a href="#sejarah" class="nav-link text-secondary px-0 hover-primary">Sejarah</a>

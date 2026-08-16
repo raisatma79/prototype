@@ -510,7 +510,7 @@
 			</div>
 			<div class="col-6 col-md-4 col-lg-2 mb-3">
 				<div class="client-thumb">
-					<img src="https://1.bp.blogspot.com/-bOgTIIT3oT0/X_Kx8PXnqxI/AAAAAAAABgM/r-Z-JW2OHvgcy9KKNxOMvo9eNNTa68wlgCLcBGAsYHQ/s2048/Logo%2BBPJS%2BKetenagakerjaan.png" alt="" class="img-fluid" style="height: 100px; object-fit: contain;">
+					<img src="https://images.seeklogo.com/logo-png/40/1/bpjs-ketenagakerjaan-logo-png_seeklogo-406885.png" alt="" class="img-fluid" style="height: 100px; object-fit: contain;">
 				</div>
 			</div>
 			<div class="col-6 col-md-4 col-lg-2 mb-3">
