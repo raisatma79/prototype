@@ -510,7 +510,7 @@
 			</div>
 			<div class="col-6 col-md-4 col-lg-2 mb-3">
 				<div class="client-thumb">
-					<img src="https://images.seeklogo.com/logo-png/40/1/bpjs-ketenagakerjaan-logo-png_seeklogo-406885.png" alt="" class="img-fluid" style="height: 100px; object-fit: contain;">
+					<img src="https://asset.kompas.com/crops/9px-Z3IYTiNoGOoU4q8odyPt1Kk=/0x0:900x600/750x500/data/photo/2017/04/09/3564836977.jpg" alt="" class="img-fluid" style="height: 100px; object-fit: contain;">
 				</div>
 			</div>
 			<div class="col-6 col-md-4 col-lg-2 mb-3">
