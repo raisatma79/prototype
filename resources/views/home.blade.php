@@ -135,11 +135,10 @@
                             Berbagai layanan medis unggulan untuk mendukung diagnosis, perawatan, dan pemulihan pasien secara optimal.
                         </p>
                     </div>
-
+					<!-- Tampilan Widget layanan unggulan mobile -->
 					<div class="col-lg-8 col-md-7 d-md-none">
 						<div class="service-slider-container">
 							<div class="service-slider">
-
 								@foreach($list_poliklinik as $poliklinik)
 								<div>
 									<div class="service-card-item">
@@ -172,11 +171,11 @@
 					</div>
 
                     <!-- Tombol Navigasi Slider -->
-                    <div class="d-flex align-items-center gap-2 mt-4 d-none d-md-block">
-                        <button class="service-nav-btn service-prev me-2" type="button" aria-label="Previous">
+                    <div class="d-flex align-items-center gap-2 mt-4">
+                        <button class="service-nav-btn service-prev me-2 d-none d-md-block" type="button" aria-label="Previous">
                             <i class="icofont-simple-left"></i>
                         </button>
-                        <button class="service-nav-btn service-next" type="button" aria-label="Next">
+                        <button class="service-nav-btn service-next d-none d-md-block" type="button" aria-label="Next">
                             <i class="icofont-simple-right"></i>
                         </button>
                     </div>
