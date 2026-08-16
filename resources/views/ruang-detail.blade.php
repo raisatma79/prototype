@@ -31,7 +31,7 @@
             <div class="col-md-4 col-lg-3">
                 <div class="sticky-top" style="top: 100px;">
                     <h5 class="mb-3 text-dark font-weight-bold">Daftar Kamar Inap</h5>
-                    <nav class="nav flex-column space-y-2">
+                    <nav class="nav flex-column space-y-2 d-none d-md-block">
                         @foreach($semuaRuang as $item)
                             <a href="{{ route('ruang-detail', $item->id) }}" 
                                class="nav-link px-0 {{ $item->id == $ruang->id ? 'text-primary font-weight-bold' : 'text-secondary' }}">
@@ -39,6 +39,17 @@
                             </a>
                         @endforeach
                     </nav>
+                    <!-- Daftar kamar versi mobile-->
+                    <div class="btn-group d-md-none" role="group" aria-label="Button group with nested dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pilih Tipe Kelas
+                        </button>
+                        <ul class="dropdown-menu">
+                            @foreach($semuaRuang as $item)
+                                <li><a href="{{ route('ruang-detail', $item->id) }}" class="dropdown-item {{ $item->id == $ruang->id ? 'text-primary font-weight-bold' : 'text-secondary' }}">{{ $item->nama_ruang }}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -95,7 +106,6 @@
                     </div>
                 </section>
             </div>
-
         </div>
     </div>
 </section>

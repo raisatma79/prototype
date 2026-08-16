@@ -29,7 +29,7 @@
                 <div class="divider mx-auto my-3" style="width: 50px; height: 3px; background-color: #17b99a;"></div>
                 <p class="text-muted">RSU Muhammadiyah Ponorogo Memiliki Tenaga Kesehatan yang Ahli dan Berpengalaman</p>
                 
-                <!-- KODE SEARCH BAR DITAMBAHKAN DI SINI -->
+                <!-- SEARCH BAR Dokter -->
                 <div class="input-group mt-4 shadow-sm rounded-pill overflow-hidden border">
                     <span class="input-group-text bg-white border-0 ps-4"><i class="bi bi-search text-muted"></i></span>
                     <input type="text" id="searchDoctor" class="form-control border-0 py-3 shadow-none" placeholder="Cari nama dokter atau spesialis..." autocomplete="off">
