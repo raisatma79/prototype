@@ -20,19 +20,37 @@
 
         <!-- Slide 2 -->
         <div class="carousel-item" data-bs-interval="5000">
-            <div class="slide-bg" style="background-image: url('https://rsumponorogo.com/images/fasilitas/9082c927-3a49-40ab-bf0f-a51f9ef1bfb5.jpg');"></div>
+            <div class="slide-bg" style="background-image: url('https://rsumponorogo.com/images/banner/REHAB%20MEDIK%20.jpg');"></div>
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <h1 class="display-4 fw-bold text-white mb-3">Fasilitas Modern & Terlengkap</h1>
-                <p class="lead text-white mb-4">Didukung oleh peralatan medis terkini untuk kesehatan Anda.</p>
+                <h1 class="display-4 fw-bold text-white mb-3"></h1>
+                <p class="lead text-white mb-4">D</p>
             </div>
         </div>
 
         <!-- Slide 3 -->
         <div class="carousel-item" data-bs-interval="5000">
-            <div class="slide-bg" style="background-image: url('images/about/Screenshot (54).png');"></div>
+            <div class="slide-bg" style="background-image: url('https://rsumponorogo.com/images/banner/URO.jpg');"></div>
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <h1 class="display-4 fw-bold text-white mb-3">Tenaga Medis Berpengalaman</h1>
-                <p class="lead text-white mb-4">Dokter spesialis kami siap memberikan pelayanan terbaik.</p>
+                <h1 class="display-4 fw-bold text-white mb-3"></h1>
+                <p class="lead text-white mb-4"></p>
+            </div>
+        </div>
+
+		<!-- Slide 4 -->
+        <div class="carousel-item" data-bs-interval="5000">
+            <div class="slide-bg" style="background-image: url('https://rsumponorogo.com/images/banner/laktasi.jpg');"></div>
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <h1 class="display-4 fw-bold text-white mb-3"></h1>
+                <p class="lead text-white mb-4"></p>
+            </div>
+        </div>
+
+		<!-- Slide 5 -->
+        <div class="carousel-item" data-bs-interval="5000">
+            <div class="slide-bg" style="background-image: url('https://rsumponorogo.com/images/banner/7.jpg');"></div>
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <h1 class="display-4 fw-bold text-white mb-3"></h1>
+                <p class="lead text-white mb-4"></p>
             </div>
         </div>
     </div>
