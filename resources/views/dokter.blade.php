@@ -8,7 +8,7 @@
 		<div class="col-md-12">
 			<div class="block text-center">
 			<span class="text-white">Dokter</span>
-			<h1 class="text-capitalize mb-5 text-lg">Dokter Spesialis</h1>
+			<h1 class="text-capitalize mb-5 text-lg">Dokter dan Tenakes RSUMP</h1>
 			<ul class="list-inline breadcumb-nav">
 				<li class="list-inline-item"><a href="{{ route('home') }}" class="text-white">Home</a></li>
 				<li class="list-inline-item"><span class="text-white">/</span></li>
@@ -25,7 +25,7 @@
         <!-- Judul Halaman -->
         <div class="row justify-content-center text-center mb-5">
             <div class="col-lg-6">
-                <h2 class="fw-bold text-capitalize">Dokter Spesialis</h2>
+                <h2 class="fw-bold text-capitalize">Cari Dokter</h2>
                 <div class="divider mx-auto my-3" style="width: 50px; height: 3px; background-color: #17b99a;"></div>
                 <p class="text-muted">RSU Muhammadiyah Ponorogo Memiliki Tenaga Kesehatan yang Ahli dan Berpengalaman</p>
                 

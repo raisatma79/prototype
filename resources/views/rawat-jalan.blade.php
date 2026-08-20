@@ -25,8 +25,8 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-7 text-center">
 				<div class="section-title">
-					<div class="divider mx-auto my-4"></div>
 					<p>RSU Muhammadiyah Ponorogo memiliki 20 poliklinik spesialis yang ditenagai oleh ahli proesional dan menggunakan teknologi diagnostik canggih dan computerize.</p>
+					<div class="divider mx-auto my-4"></div>
 				</div>
 			</div>
 		</div>
@@ -35,15 +35,16 @@
 			@foreach($rawat_jalan as $poli)
 			<div class="col-lg-4 col-md-6 ">
 				<div class="department-block mb-5">
-					<img src="{{ $poli->gambar_poliklinik }}" alt="" class="img-fluid w-100">
+					<a href="{{ route('poli-detail', $poli->id) }}"><img src="{{ $poli->gambar_poliklinik }}" alt="" class="img-fluid w-100"></a>
 					<div class="content">
-						<h4 class="mt-4 mb-2 title-color">{{$poli->nama_poliklinik}}</h4>
+						<h4 class="mt-4 mb-2 title-color"><a href="{{ route('poli-detail', $poli->id) }}" class="read-more">{{$poli->nama_poliklinik}}</a></h4>
 						<p class="mb-4" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">{{ $poli->deskripsi }}</p>
 						<a href="{{ route('poli-detail', $poli->id) }}" class="read-more">Selebihnya  <i class="icofont-simple-right ml-2"></i></a>
 					</div>
 				</div>
 			</div>
 			@endforeach
+		</div>
 	</div>
 </section>
 @endsection

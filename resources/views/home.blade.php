@@ -57,36 +57,34 @@
 </section>
 <section class="cta-section cta position-relative d-none d-md-block">
 	<div class="container position-relative" style="z-index: 2;">
-		<div class="cta position-relative">
-			<div class="row">
-				<div class="col-6 col-lg-3 col-md-6 col-sm-6">
-					<div class="counter-stat">
-						<i class="icofont-person"></i>
-						<span class="h3">600.000</span>+
-						<p>Pasien</p>
-					</div>
+		<div class="row align-items-center">
+			<div class="col-6 col-lg-3 col-md-6 col-sm-6">
+				<div class="counter-stat">
+					<i class="icofont-person"></i>
+					<span class="h3">600.000</span>+
+					<p>Pasien</p>
 				</div>
-				<div class="col-6 col-lg-3 col-md-6 col-sm-6">
-					<div class="counter-stat">
-						<i class="icofont-flag"></i>
-						<span class="h3">27</span>+
-						<p>Poliklinik</p>
-					</div>
+			</div>
+			<div class="col-6 col-lg-3 col-md-6 col-sm-6">
+				<div class="counter-stat">
+					<i class="icofont-flag"></i>
+					<span class="h3">27</span>+
+					<p>Poliklinik</p>
 				</div>
+			</div>
 				
-				<div class="col-6 col-lg-3 col-md-6 col-sm-6">
-					<div class="counter-stat">
-						<i class="icofont-doctor"></i>
-						<span class="h3">40</span>+
-						<p>Dokter Profesional</p>
-					</div>
+			<div class="col-6 col-lg-3 col-md-6 col-sm-6">
+				<div class="counter-stat">
+					<i class="icofont-doctor"></i>
+					<span class="h3">40</span>+
+					<p>Dokter Profesional</p>
 				</div>
-				<div class="col-6 col-lg-3 col-md-6 col-sm-6">
-					<div class="counter-stat">
-						<i class="icofont-bed"></i>
-						<span class="h3">160</span>
-						<p>Kamar Inap</p>
-					</div>
+			</div>
+			<div class="col-6 col-lg-3 col-md-6 col-sm-6">
+				<div class="counter-stat">
+					<i class="icofont-bed"></i>
+					<span class="h3">160</span>
+					<p>Kamar Inap</p>
 				</div>
 			</div>
 		</div>
@@ -588,4 +586,20 @@
         </div>
     </div>
 </section>
+
+<!-- Pop-up informasi -->
+<div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0 shadow-none">
+            <div class="modal-header border-0 p-0 position-relative">
+                <!-- Tombol Close -->
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-2 p-2 bg-dark rounded-circle" data-bs-dismiss="modal" aria-label="Close" style="z-index: 1055; opacity: 0.8;"></button>
+            </div>
+            <div class="modal-body p-0 text-center position-relative">
+                <!-- Gambar Pop-up -->
+                <img src="https://rsumponorogo.com/images/fasilitas/WhatsApp%20Image%202025-10-17%20at%2009.56.07%20(1).jpeg" alt="Promo dan Layanan Baru" class="img-fluid rounded shadow" style="max-height: 85vh; object-fit: contain;">
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

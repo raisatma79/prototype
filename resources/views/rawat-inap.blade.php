@@ -25,8 +25,8 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-7 text-center">
 				<div class="section-title">
-					<div class="divider mx-auto my-4"></div>
 					<p>Instalasi Rawat Inap RSU Muhammadiyah Ponorogo memiliki 151 TT dengan ruang perawatan.</p>
+					<div class="divider mx-auto my-4"></div>
 				</div>
 			</div>
 		</div>
@@ -36,11 +36,11 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="department-block mb-5">
 						<!-- Menampilkan gambar dari database -->
-						<img src="{{ $ruang->gambar_kamar }}" alt="{{ $ruang->nama_ruang }}" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
+						<a href="{{ route('ruang-detail', $ruang->id) }}"><img src="{{ $ruang->gambar_kamar }}" alt="{{ $ruang->nama_ruang }}" class="img-fluid w-100" style="height: 250px; object-fit: cover;"></a>
 						
 						<div class="content">
 							<!-- Menampilkan nama ruang -->
-							<h4 class="mt-4 mb-2 title-color">{{ $ruang->nama_ruang }}</h4>
+							<h4 class="mt-4 mb-2 title-color"><a href="{{ route('ruang-detail', $ruang->id) }}" class="read-more">{{ $ruang->nama_ruang }}</a></h4>
 							
 							<!-- Link menuju ke halaman detail membawa ID kamar -->
 							<a href="{{ route('ruang-detail', $ruang->id) }}" class="read-more">

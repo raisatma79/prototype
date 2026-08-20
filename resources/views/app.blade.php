@@ -342,6 +342,28 @@
             icon.classList.replace('bi-chevron-up', 'bi-chevron-down');
         }
     }
-    </script>
+</script>
+
+<script>
+    // Memastikan seluruh elemen DOM selesai dimuat
+    document.addEventListener("DOMContentLoaded", function() {
+        // Mengecek apakah flag 'promoModalShown' belum ada di sessionStorage
+        if (!sessionStorage.getItem('promoModalShown')) {
+            // Menginisialisasi elemen modal menggunakan API Bootstrap 5
+            var promoElement = document.getElementById('promoModal');
+            
+            // Pastikan elemen ada di halaman (mencegah error jika dibuka di halaman selain Home)
+            if(promoElement) {
+                var myPromoModal = new bootstrap.Modal(promoElement);
+                
+                // Menampilkan pop-up
+                myPromoModal.show();
+                
+                // Menyimpan flag ke sessionStorage
+                sessionStorage.setItem('promoModalShown', 'true');
+            }
+        }
+    });
+</script>
 </body>
 </html>

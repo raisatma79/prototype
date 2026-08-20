@@ -22,21 +22,12 @@
 
 <section class="section service-2">
 	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-7 text-center">
-				<div class="section-title">
-					<div class="divider mx-auto my-4"></div>
-					<p>Berita terkini seputar RSUMP</p>
-				</div>
-			</div>
-		</div>
-
 		<div class="row">
 			@foreach($list_berita as $berita)
 				<div class="col-lg-4 col-md-6">
 					<div class="department-block mb-5">
 						<!-- Menampilkan gambar dari database -->
-						<img src="{{ $berita->gambar }}" alt="{{ $berita->judul }}" class="img-fluid w-100" style="height: 250px; object-fit: cover;">
+						<a href="{{ route('news-detail', $berita->slug) }}"><img src="{{ $berita->gambar }}" alt="{{ $berita->judul }}" class="img-fluid w-100" style="height: 250px; object-fit: cover;"></a>
 						
 						<div class="content">
 							<!-- Menampilkan nama ruang -->
