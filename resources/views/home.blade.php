@@ -23,7 +23,7 @@
             <div class="slide-bg" style="background-image: url('https://rsumponorogo.com/images/banner/REHAB%20MEDIK%20.jpg');"></div>
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <h1 class="display-4 fw-bold text-white mb-3"></h1>
-                <p class="lead text-white mb-4">D</p>
+                <p class="lead text-white mb-4"></p>
             </div>
         </div>
 

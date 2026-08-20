@@ -1923,7 +1923,7 @@ a:focus {
 
 /* Mengatur tinggi hero section (Bisa disesuaikan, misalnya 100vh untuk full screen) */
 #heroCarousel .carousel-item {
-    height: 60vh; 
+    height: 61vh; 
     min-height: 500px;
     background-color: #000; /* Warna dasar hitam agar transisi lebih pekat */
 }
