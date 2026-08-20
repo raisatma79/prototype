@@ -11,7 +11,7 @@
         <!-- data-bs-interval="5000" berarti gambar berganti tiap 5 detik -->
         <div class="carousel-item active" data-bs-interval="5000">
             <!-- Ganti URL background-image dengan gambar Anda -->
-            <div class="slide-bg" style="background-image: url('https://rsumponorogo.com/images/profil/WhatsApp%20Image%202025-10-16%20at%2010.56.02.jpeg');"></div>
+            <div class="slide-bg" style="background-image: url('https://rsumponorogo.com/images/profil/WhatsApp%20Image%202025-10-16%20at%2010.56.02.jpeg'); filter: brightness(0.5);"></div>
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <h1 class="display-4 fw-bold text-white mb-3">Selamat Datang di RSU Muhammadiyah</h1>
                 <p class="lead text-white mb-4">Melayani dengan Sepenuh Hati dan Profesional.</p>

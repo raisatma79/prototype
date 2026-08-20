@@ -1939,7 +1939,7 @@ a:focus {
     background-position: center;
     background-repeat: no-repeat;
     /* Memberikan efek gelap (overlay) agar teks putih lebih mudah dibaca */
-    filter: brightness(0.5); 
+     
 }
 
 /* Mengatur posisi konten/teks di tengah layar */

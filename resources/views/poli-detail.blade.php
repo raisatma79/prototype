@@ -27,7 +27,7 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="department-img">
-					<img src="{{ $poliklinik->gambar_poliklinik }}" alt="{{ $poliklinik->nama_poliklinik }}" class="img-fluid w-100 h-100">
+					<img src="{{ $poliklinik->gambar_poliklinik }}" alt="{{ $poliklinik->nama_poliklinik }}" class="img-fluid w-100 rounded" style="max-height: 450px; object-fit: cover;">
 				</div>
 			</div>
 		</div>
@@ -81,14 +81,24 @@
 			</div>
 
 			<div class="col-lg-4">
-				<div class="sidebar-widget schedule-widget mt-5">
-					<h5 class="mb-4">Jadwal {{ $poliklinik->nama_poliklinik }}</h5>
+				<div class="sidebar-widget schedule-widget">
+                    <h5 class="mb-4">Dokter {{ $poliklinik->nama_poliklinik }}</h5>
+					<ul class="list-unstyled">
+						<ul class="list-unstyled department-service">
+                        @forelse($dokter as $spesialis)
+							<li><i class="icofont-doctor mr-2"></i>{{ $spesialis->nama_dokter }}</li>
+                        @empty
+							<li>Data dokter tidak ditemukan</li>
+                        @endforelse
+                        </ul>
+					</ul>
 
+					<h5 class="mb-4">Jadwal {{ $poliklinik->nama_poliklinik }}</h5>
 					<ul class="list-unstyled">
 						<ul class="list-unstyled department-service">
 						@foreach(explode("\n", $poliklinik->jadwal) as $jadwal)
 							@if(trim($jadwal) !='')
-							<li><a href="#">{{ trim($jadwal) }}</a></li>
+							<li>{{ trim($jadwal) }}</li>
 							@endif
 						@endforeach
 						</ul>

@@ -44,13 +44,17 @@
                     <label class="form-label fw-semibold text-secondary fs-7">Poliklinik</label>
                     <select name="speciality" class="form-select rounded-3">
                         <option value="all" {{ request('spesialis') == 'all' ? 'selected' : '' }}>Semua Poliklinik</option>
-                        <option value="Klinik Jantung" {{ request('speciality') == 'Klinik Jantung' ? 'selected' : '' }}>Klinik Jantung</option>
                         <option value="Klinik Anak" {{ request('speciality') == 'Klinik Anak' ? 'selected' : '' }}>Klinik Anak</option>
-                        <option value="Klinik Mata" {{ request('speciality') == 'Klinik Mata' ? 'selected' : '' }}>Klinik Mata</option>
+                        <option value="Klinik Bedah Umum" {{ request('speciality') == 'Klinik Bedah Umum' ? 'selected' : '' }}>Klinik Bedah Umum</option>
+                        <option value="Klinik Internis-Penyakit Dalam" {{ request('speciality') == 'Klinik Internis-Penyakit Dalam' ? 'selected' : '' }}>Klinik Internis-Penyakit Dalam</option>
                         <option value="Klinik Gigi" {{ request('speciality') == 'Klinik Gigi' ? 'selected' : '' }}>Klinik Gigi</option>
-						<option value="Klinik Obsgyn" {{ request('speciality') == 'Klinik Obsgyn' ? 'selected' : '' }}>Klinik Obsgyn</option>
-						<option value="Klinik Saraf" {{ request('speciality') == 'Klinik Saraf' ? 'selected' : '' }}>Klinik Saraf</option>
-						<option value="Klinik Bedah Umum" {{ request('speciality') == 'Klinik Bedah Umum' ? 'selected' : '' }}>Klinik Bedah Umum</option>
+                        <option value="Klinik Gizi" {{ request('speciality') == 'Klinik Gizi' ? 'selected' : '' }}>Klinik Gizi</option>
+                        <option value="Klinik Jantung" {{ request('speciality') == 'Klinik Jantung' ? 'selected' : '' }}>Klinik Jantung</option>
+                        <option value="Klinik Mata" {{ request('speciality') == 'Klinik Mata' ? 'selected' : '' }}>Klinik Mata</option>
+                        <option value="Klinik Obsgyn" {{ request('speciality') == 'Klinik Obsgyn' ? 'selected' : '' }}>Klinik Obsgyn</option>
+                        <option value="Klinik Orthopaedi-Bedah Tulang" {{ request('speciality') == 'Klinik Orthopaedi-Bedah Tulang' ? 'selected' : '' }}>Klinik Orthopaedi-Bedah Tulang</option>
+                        <option value="Klinik Saraf" {{ request('speciality') == 'Klinik Saraf' ? 'selected' : '' }}>Klinik Saraf</option>
+                        <option value="Klinik Umum" {{ request('speciality') == 'Klinik Umum' ? 'selected' : '' }}>Klinik Umum</option>
                     </select>
                 </div>
 

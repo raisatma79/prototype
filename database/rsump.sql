@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 10, 2026 at 10:37 AM
+-- Generation Time: Aug 20, 2026 at 09:19 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -174,7 +174,15 @@ INSERT INTO `jadwal_dokter` (`id`, `dokter_id`, `senin`, `selasa`, `rabu`, `kami
 (8, 8, '07.00 - 11.00', '07.00 - 11.00', '07.00 - 11.00', '07.00 - 11.00', '07.00 - 11.00', '07.00 - 11.00'),
 (9, 9, '07.00 – 14.00', '07.00 – 14.00', '07.00 – 14.00', '07.00 – 14.00', '07.00 – 14.00', '08.00 – 12.00'),
 (10, 10, '07.00 - 16.00', '07.00 - 15.00', '07.00 - 16.00', '07.00 - 15.00', '07.00 - 16.00', ''),
-(11, 11, '09.00 - 13.00', '09.00 - 13.00', '09.00 - 13.00', '09.00 - 13.00', '09.00 - 12.00', '');
+(11, 11, '09.00 - 13.00', '09.00 - 13.00', '09.00 - 13.00', '09.00 - 13.00', '09.00 - 12.00', ''),
+(12, 12, '07.00 – 14.00', '07.00 – 14.00', '07.00 – 14.00', '07.00 – 14.00', '07.00 – 14.00', '07.00 – 14.00'),
+(13, 13, '08.00 - 12.00', '08.00 - 12.00', '08.00 - 12.00', '08.00 - 12.00', '08.00 - 12.00', '08.00 - 10.00'),
+(14, 14, '07.00 - 10.00', '07.00 - 10.00', '07.00 - 10.00', '07.00 - 10.00', '07.00 - 10.00', '07.00 - 10.00'),
+(15, 15, '07.00 – 14.00', '07.00 – 14.00', '07.00 – 14.00', '07.00 – 14.00', '07.00 – 14.00', '07.00 – 14.00'),
+(16, 16, '12.15 - 14.00', '12.15 - 14.00', '12.15 - 14.00', '12.15 - 14.00', '', ''),
+(17, 17, '19.30 - 22.30', '', '19.30 - 22.30', '', '19.30 - 22.30', ''),
+(18, 18, '08.30 - Selesai', '', '', '08.30 - Selesai', '', '08.30 - Selesai'),
+(19, 19, '09.00 - 14.00', '09.00 - 14.00', '09.00 - 14.00', '09.00 - 14.00', '09.00 - 14.00', '09.00 - 14.00');
 
 -- --------------------------------------------------------
 
@@ -377,7 +385,15 @@ INSERT INTO `tabel_dokter` (`id`, `nama_dokter`, `spesialis`, `gambar_dokter`) V
 (8, 'dr. Dian Fikri R, Sp. OG', 'Klinik Obsgyn', 'https://www.rsumponorogo.com/images/dokter/IMG-20241126-WA0043-removebg-preview.jpg'),
 (9, 'dr. Ardantri Dyana SP', 'Klinik TB DOTS\r\nKlinik Umum', 'https://www.rsumponorogo.com/images/dokter/dr-ardantri.jpg'),
 (10, 'dr. Nuriza K, Sp. JP', 'Klinik Jantung', 'https://www.rsumponorogo.com/images/dokter/DR.%20NURIZA-removebg-preview.jpg'),
-(11, 'dr. Tonny Hartono, Sp.B', 'Klinik Bedah Umum', 'https://www.rsumponorogo.com/images/dokter/tonny.jpg');
+(11, 'dr. Tonny Hartono, Sp.B', 'Klinik Bedah Umum', 'https://www.rsumponorogo.com/images/dokter/tonny.jpg'),
+(12, 'dr. Indra Wahono Suhariyanto', 'Klinik Umum', 'https://rsumponorogo.com/images/dokter/DR%20INDRA-removebg-preview.jpg'),
+(13, 'dr. Herlambang S. P., M.M.R, Sp. PD', 'Klinik Internis-Penyakit Dalam', 'https://rsumponorogo.com/images/dokter/dr._herlambang-removebg-preview-removebg-preview.jpg'),
+(14, 'dr. Intan Salinurasa, Sp. B', 'Klinik Bedah Umum', 'https://rsumponorogo.com/images/dokter/intan.jpg'),
+(15, 'dr. Yuniar Tri Rahmawati', 'Klinik Umum', 'https://rsumponorogo.com/images/dokter/DOKTER%20DOKTER.jpg'),
+(16, 'dr. Danang Kusuma Adi, Sp. PD', 'Klinik Internis-Penyakit Dalam', 'https://rsumponorogo.com/images/dokter/DR%20DANANG.jpg'),
+(17, 'dr. Rachmat Saleh R, Sp.OT', 'Klinik Orthopaedi-Bedah Tulang', 'https://rsumponorogo.com/images/dokter/rahmat.jpg'),
+(18, 'drg. Restia Rahmadhani', 'Klinik Gigi', 'https://rsumponorogo.com/images/dokter/drg.%20Restia%20web.jpg'),
+(19, 'Deni Wahyuti, S. Gz', 'Klinik Gizi', 'https://rsumponorogo.com/images/dokter/Bu_Deni-removebg-preview%20web.jpg');
 
 -- --------------------------------------------------------
 
@@ -620,7 +636,7 @@ ALTER TABLE `tabel_berita`
 -- AUTO_INCREMENT for table `tabel_dokter`
 --
 ALTER TABLE `tabel_dokter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `tabel_ruang_inap`

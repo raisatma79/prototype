@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\PoliKlinik;
+use App\Models\tabel_dokter;
 
 class PoliklinikController extends Controller
 {
@@ -16,7 +17,8 @@ class PoliklinikController extends Controller
     public function poliklinik($id)
     {
         $poliklinik = PoliKlinik::findOrFail($id);
-        return view('poli-detail', compact('poliklinik'));
+        $dokter = tabel_dokter::where('spesialis', 'LIKE', '%' . $poliklinik->nama_poliklinik . '%')->get();
+        return view('poli-detail', compact('poliklinik', 'dokter'));
     }
 }
 
